@@ -35,6 +35,8 @@ public class practica2_2 extends javax.swing.JFrame {
         campo_apellido = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("SALUDA");
+        setName("SALUDA"); // NOI18N
 
         boton_saluda.setLabel("Saluda");
         boton_saluda.addActionListener(new java.awt.event.ActionListener() {
