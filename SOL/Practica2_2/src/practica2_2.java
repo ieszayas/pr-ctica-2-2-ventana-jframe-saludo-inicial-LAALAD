@@ -129,18 +129,19 @@ public class practica2_2 extends javax.swing.JFrame {
         // Obtener el texto ingresado en el campo de texto
         String nombre = campo_nombre.getText();
         String apellido = campo_apellido.getText();
-        
-        if (nombre.isEmpty() && apellido.isEmpty()) {
+        String nombre_def = "Introduzca nombre";
+        String apellido_def = "Introduzca apellido";
+        if (nombre.isEmpty() || apellido.isEmpty() || nombre.equals(nombre_def) || apellido.equals(apellido_def)) {
             JOptionPane.showMessageDialog(this, "Por favor, introduzca un nombre y un apellido.", "Advertencia", JOptionPane.WARNING_MESSAGE);
-        } else if (nombre.length() < 5) {
+        } else if (nombre.length() < 5 || apellido.length() < 5) {
             JOptionPane.showMessageDialog(this, "Por favor, introduzca un nombre con 5 caracteres como minimo.", "Advertencia", JOptionPane.WARNING_MESSAGE);
         } else if (nombre.matches(".*[0-9].*")) {
             JOptionPane.showMessageDialog(this, "Por favor, no introduzca caracteres numericos.", "Advertencia", JOptionPane.WARNING_MESSAGE);
         } else {
             JOptionPane.showMessageDialog(this, "¡Hola, " + nombre + " " + apellido + "!", "Saludo", JOptionPane.INFORMATION_MESSAGE);
         }
-        campo_nombre.setText("Introduzca nombre");
-        campo_apellido.setText("Introduzca apellido");
+        campo_nombre.setText(nombre_def);
+        campo_apellido.setText(apellido_def);
 
     }//GEN-LAST:event_boton_saludaActionPerformed
 
