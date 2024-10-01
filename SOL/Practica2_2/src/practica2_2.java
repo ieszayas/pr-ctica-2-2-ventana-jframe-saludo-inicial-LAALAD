@@ -134,7 +134,7 @@ public class practica2_2 extends javax.swing.JFrame {
         if (nombre.isEmpty() || apellido.isEmpty() || nombre.equals(nombre_def) || apellido.equals(apellido_def)) {
             JOptionPane.showMessageDialog(this, "Por favor, introduzca un nombre y un apellido.", "Advertencia", JOptionPane.WARNING_MESSAGE);
         } else if (nombre.length() < 5 || apellido.length() < 5) {
-            JOptionPane.showMessageDialog(this, "Por favor, introduzca un nombre con 5 caracteres como minimo.", "Advertencia", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Por favor, introduzca un nombre y un apellido con 5 caracteres como minimo.", "Advertencia", JOptionPane.WARNING_MESSAGE);
         } else if (nombre.matches(".*[0-9].*")) {
             JOptionPane.showMessageDialog(this, "Por favor, no introduzca caracteres numericos.", "Advertencia", JOptionPane.WARNING_MESSAGE);
         } else {
