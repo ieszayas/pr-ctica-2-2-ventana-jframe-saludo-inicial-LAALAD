@@ -1,0 +1,6 @@
+|ID Caso Prueba|Descripción Caso de Prueba                    |Entrada                    |Salida Esperada                                                                    |Resultado   |
+|--------------|----------------------------------------------|---------------------------|-----------------------------------------------------------------------------------|------------|
+|01            |Comprobación del botón "saluda"               |N/A                        |Aparece una ventana modal saludando con el nombre y apellidos introducidos                     |OK|
+|02            |Validación de campos vacíos                   |sin texto                  |Aparece una ventana modal indicando que los campos no pueden estar vacíos          |OK|
+|03            |Comprobación longitud de campos <5            |Texto <5                   |Aparece una ventana modal indicando que el nombre o apellidos no puede ser menor de 5 |OK|
+|04            |Comprobación sin símbolos numéricos           |Texto con símbolo numérico |Aparece una ventana modal indicando que no puede haber símbolos numéricos          |OK|
